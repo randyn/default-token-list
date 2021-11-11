@@ -25,6 +25,8 @@
   "scripts": {
     "build": "ts-node scripts/cleanupTokens.ts && ts-node scripts/buildLists.ts && prettier --write .",
     "lint": "ts-node scripts/validateLists.ts",
+    "lint-images": "ts-node scripts/lintTokenAssets.ts",
+    "resize-images": "ts-node scripts/resizeTokenAssets.ts",
     "prepack": "npm run build && git add .",
     "prepare": "husky install"
   },
